@@ -1,0 +1,35 @@
+{
+  "name": "genpark-ai-integration-platform-api-mesh-connector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI-powered API mesh connector for real-time cross-platform data integration, field mapping, and bidirectional sync.",
+  "author": "genpark",
+  "category": "engineering",
+  "tags": [
+    "api-integration",
+    "data-sync",
+    "field-mapping",
+    "ai-integration",
+    "mesh-connector"
+  ],
+  "inputs": {
+    "source_system": {
+      "type": "string"
+    },
+    "target_system": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "connection_id": {
+      "type": "string"
+    },
+    "field_mappings": {
+      "type": "array"
+    },
+    "records_synced_last_24h": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
